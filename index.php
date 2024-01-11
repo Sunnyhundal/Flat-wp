@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Advanced WP Theme</title>
+
   </head>
   <body>
     <header>
@@ -31,6 +32,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in tristique turpis, non rutrum ipsum. Suspendisse eleifend sodales neque quis pretium. Vestibulum vehicula rhoncus suscipit. Maecenas in libero non dui ullamcorper laoreet. Quisque commodo ac mauris a ultrices. Fusce mi mi, cursus eleifend imperdiet quis, bibendum non nulla. Mauris tincidunt leo purus, tincidunt lacinia leo maximus non. In eget posuere quam, ac ornare metus. Integer molestie sem egestas luctus sodales.
 
               Vestibulum vitae arcu purus. Mauris tempor, ex nec tristique efficitur, tortor leo mattis lectus, et sagittis erat velit sed orci. Morbi maximus orci eget luctus elementum. Sed bibendum libero a lobortis viverra. Proin felis nisi, eleifend eget interdum ac, semper vel massa. Ut enim arcu, rhoncus sit amet cursus ut, iaculis ut elit. Phasellus gravida elementum arcu, et maximus felis auctor sed. Vivamus at felis auctor, mollis nunc vitae, vulputate ex. Aliquam feugiat nunc auctor lacinia laoreet. Vestibulum eget odio vitae velit facilisis ullamcorper. Maecenas pretium eu libero non rhoncus. Ut tempus varius dolor ut accumsan. Aliquam fringilla magna id purus pretium, ac pretium libero placerat. In nunc ipsum, iaculis vitae molestie in, pulvinar sit amet mi. Nunc vulputate vestibulum quam, ac venenatis leo bibendum luctus. Nullam semper lorem dui, id efficitur arcu interdum a.</p>
+
+            <a class="button" href="#">Read More</a>
          </article>
       </div>
   </body>
