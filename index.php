@@ -30,14 +30,20 @@
     <div class="container content">
       <div class="main block">
          <article class="post">
-          <h2>Blog Post 1</h2>
-            <p class="meta">Posted at 11:00 on May 9 by admin</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in tristique turpis, non rutrum ipsum. Suspendisse eleifend sodales neque quis pretium. Vestibulum vehicula rhoncus suscipit. Maecenas in libero non dui ullamcorper laoreet. Quisque commodo ac mauris a ultrices. Fusce mi mi, cursus eleifend imperdiet quis, bibendum non nulla. Mauris tincidunt leo purus, tincidunt lacinia leo maximus non. In eget posuere quam, ac ornare metus. Integer molestie sem egestas luctus sodales.
 
-              Vestibulum vitae arcu purus. Mauris tempor, ex nec tristique efficitur, tortor leo mattis lectus, et sagittis erat velit sed orci. Morbi maximus orci eget luctus elementum. Sed bibendum libero a lobortis viverra. Proin felis nisi, eleifend eget interdum ac, semper vel massa. Ut enim arcu, rhoncus sit amet cursus ut, iaculis ut elit. Phasellus gravida elementum arcu, et maximus felis auctor sed. Vivamus at felis auctor, mollis nunc vitae, vulputate ex. Aliquam feugiat nunc auctor lacinia laoreet. Vestibulum eget odio vitae velit facilisis ullamcorper. Maecenas pretium eu libero non rhoncus. Ut tempus varius dolor ut accumsan. Aliquam fringilla magna id purus pretium, ac pretium libero placerat. In nunc ipsum, iaculis vitae molestie in, pulvinar sit amet mi. Nunc vulputate vestibulum quam, ac venenatis leo bibendum luctus. Nullam semper lorem dui, id efficitur arcu interdum a.</p>
+        <?php if(have_posts()) : ?> 
+          <?php while(have_posts()) : the_post(); ?>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <p class="meta">Posted at <?php the_time(); ?> on <?php the_date(); ?> by <?php the_author(); ?></p>
+            <?php the_content(); ?>
+          <?php endwhile; ?>
+        <?php else : ?>
+          <?php echo wpautop('Sorry, No posts were found'); ?>
+        <?php endif; ?>
 
             <a class="button" href="#">Read More</a>
-         </article>
+          </article>
+
       </div>
   </body>
 </html>
