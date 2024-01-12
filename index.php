@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Advanced WP Theme</title>
-
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <title><?php bloginfo('name'); ?></title>
+    <link rel="stylesheet" 
+          href="<?php bloginfo('stylesheet_url'); ?>">
   </head>
   <body>
     <header>
       <div class="container">
-        <h1>Wordpress Theme</h1>
+        <h1><?php bloginfo('name'); ?></h1>
+        <span><?php bloginfo('description'); ?></span>
         <div class="h_right">
           <form>
             <input type="text" placeholder="Search..." />
