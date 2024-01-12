@@ -1,3 +1,39 @@
 /*
-* Theme Name:        wp-boilerplate
+* Theme Name: Flat-wp
+    Author: Sunny Hundal
+    Description: A simple flat theme for WordPress
+    Version: 1.0
  */
+
+body {
+  font-family: Arial;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #009acd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+  overflow: auto;
+}
+
+header {
+  background: #f4f4f4;
+  padding: 10px;
+  border-bottom: 3px solid #009acd;
+}
